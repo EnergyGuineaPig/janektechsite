@@ -226,6 +226,116 @@
 <a>Remember that target will always be 0,3,5,7,9 and more. if you have any other idea how to delist it then share!</a>
 
 
+    <h2>jprinter:</h2>
+    <h4>how to import: </h4>
+    <a>download the file using <div class="code-text"><span class="yellow">pip install jjprinter==0.1.0</span></div> 
+    After that just use<div class="code-text"><span class="red">import </span><span class="yellow">jprinter </span></div> </a>
+    
+    <h4>Updates: </h4>
+    <a>This addon will be updated someday(if i want to). for now you need use this.</a>
+    <a>You can modify the addon and if you want to publish it just please add that the base was from janektech.pl </a>
+    
+    <h4>Functions: </h4>
+    <a>init. init is used to create the tempfile. use it at the start of your program</a>
+    <a>*importing* <div class="code-text"><span class="yellow">import jprinter as j</span></div> 
+    <div class="code-box">
+    
+<pre>
+<span class="green">j</span><span class="yellow">.init()</span></span>
+<span class="white">Result:  </span><span class="white">temprint.html created</span></span>
+</pre>
+</div>
+
+<a>set. set is used to change the font, font color(for title or for normal text). use it at the start of your program</a>
+    <a>ex. 1</a>
+    <div class="code-box">
+    
+<pre>
+<span class="green">j</span><span class="yellow">.set("font", "Tahoma")</span></span>
+<span class="white">Result:  </span><span class="white">font for the normal text has been set to Tahoma</span></span>
+</pre>
+</div>
+
+    <a>ex. 2</a>
+    <div class="code-box">
+    
+<pre>
+<span class="green">j</span><span class="yellow">.set("Titlefont", "Tahoma")</span></span>
+<span class="white">Result:  </span><span class="white">font for the title has been set to Tahoma</span></span>
+</pre>
+</div>
+
+    <a>ex. 3</a>
+    <div class="code-box">
+    
+<pre>
+<span class="green">j</span><span class="yellow">.set("Titlecolor", "red")</span></span>
+<span class="white">Result:  </span><span class="white">Title color has been changed to red</span></span>
+</pre>
+</div>
+
+    <a>ex. 4</a>
+    <div class="code-box">
+    
+<pre>
+<span class="green">j</span><span class="yellow">.set("Fontcolor", "blue")</span></span>
+<span class="white">Result:  </span><span class="white">Font color has been changed to blue</span></span>
+</pre>
+</div>
+
+
+
+<a>addtext. addtext is used to add a line of text</a>
+    <div class="code-box">
+    
+<pre>
+<span class="green">j</span><span class="yellow">.addtext("i visited janektech.pl !")</span></span>
+<span class="white">Result:  </span><span class="white">Created a new line of text in the file</span></span>
+</pre>
+</div>
+
+<a>addtitle. addtitle is used to add title </a>
+    <div class="code-box">
+    
+<pre>
+<span class="green">j</span><span class="yellow">.addtitle("My document")</span></span>
+<span class="white">Result:  </span><span class="white">Created a new Title in the file</span></span>
+</pre>
+</div>
+
+
+<a>addphoto. addphoto is used to add a photo to the file.</a>
+<a>do NOT forget about r before your path.</a>
+    <div class="code-box">
+    
+<pre>
+<span class="green">j</span><span class="yellow">.addphoto(r"c:/photo.jpg")</span></span>
+<span class="white">Result:  </span><span class="white">Added a photo to the file</span></span>
+</pre>
+</div>
+
+
+<a>print. it prints the file</a>
+    <div class="code-box">
+    
+<pre>
+<span class="green">j</span><span class="yellow">.print()</span></span>
+<span class="white">Result:  </span><span class="white">prints the file using the default printer</span></span>
+</pre>
+</div>
+
+<a>end. it deletes the temp file</a>
+    <div class="code-box">
+    
+<pre>
+<span class="green">j</span><span class="yellow">.end()</span></span>
+<span class="white">Result:  </span><span class="white">file deleted</span></span>
+</pre>
+</div>
+
+<a>and thats it. its a really simple module</a>
+
+
 <a class="button" href="../">Back</a>
 </body>
 </html>
