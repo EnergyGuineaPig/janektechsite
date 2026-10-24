@@ -522,3 +522,336 @@ footer {
         align-items: flex-start;
     }
 }
+
+
+/* JanekNetwork homepage section */
+.jn-section {
+    margin-top: 24px;
+    border-radius: 30px;
+    overflow: hidden;
+    scroll-margin-top: 112px;
+}
+
+.jn-banner {
+    background: #074b27;
+    line-height: 0;
+}
+
+.jn-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.jn-body {
+    padding: 38px 42px 42px;
+    background: linear-gradient(145deg, rgba(255,255,255,.84), rgba(235,249,240,.86));
+}
+
+.jn-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding-bottom: 26px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--line);
+}
+
+.jn-intro p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.jn-columns {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(300px, .95fr);
+    align-items: start;
+    gap: 38px;
+}
+
+.jn-join h2 {
+    color: #103b24;
+    font-size: clamp(48px, 6.5vw, 82px);
+    font-weight: 900;
+    line-height: .92;
+    letter-spacing: -4px;
+}
+
+.jn-join h2 span {
+    color: var(--green);
+}
+
+.jn-lead {
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.jn-address {
+    margin-top: 25px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid rgba(23,138,74,.25);
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(22,77,48,.05);
+}
+
+.jn-address-label {
+    display: block;
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.jn-address-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.jn-address code {
+    flex: 1 1 230px;
+    min-width: 0;
+    color: #123e27;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: clamp(18px, 2vw, 25px);
+    font-weight: 850;
+    letter-spacing: -.7px;
+    overflow-wrap: anywhere;
+    user-select: all;
+}
+
+.jn-copy {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-height: 40px;
+    padding: 9px 12px;
+    border: 1px solid rgba(23,138,74,.18);
+    border-radius: 10px;
+    color: var(--green-dark);
+    background: var(--green-soft);
+    cursor: pointer;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 750;
+}
+
+.jn-copy:hover {
+    background: #d7efdf;
+}
+
+.jn-copy:focus-visible,
+.jn-download:focus-visible {
+    outline: 3px solid #79cc9a;
+    outline-offset: 4px;
+}
+
+.jn-copy-status {
+    margin-top: 10px;
+    min-height: 18px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.jn-steps {
+    list-style: none;
+    display: grid;
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.jn-steps li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.jn-step-number {
+    flex: 0 0 38px;
+    display: grid;
+    place-items: center;
+    height: 38px;
+    border: 1px solid rgba(23,138,74,.2);
+    border-radius: 12px;
+    background: rgba(255,255,255,.7);
+    color: var(--green);
+    font-size: 13px;
+    font-weight: 850;
+}
+
+.jn-steps h3 {
+    color: #173b27;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.jn-steps p {
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.jn-steps strong {
+    font-weight: 700;
+}
+
+.jn-compatibility {
+    margin-top: 24px;
+    padding-left: 14px;
+    border-left: 3px solid #91c9a6;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.65;
+}
+
+.jn-host {
+    padding: 30px;
+    border-radius: 24px;
+    color: #f3fff7;
+    background: linear-gradient(145deg, #126b38, #06391f);
+    box-shadow: 0 16px 36px rgba(10,68,34,.17);
+}
+
+.jn-host-kicker {
+    color: #b2e7c3;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.jn-host h3 {
+    margin-top: 14px;
+    color: white;
+    font-size: clamp(27px, 3vw, 38px);
+    font-weight: 850;
+    line-height: 1.02;
+    letter-spacing: -1.3px;
+}
+
+.jn-host-description {
+    margin-top: 17px;
+    color: #d5eddf;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.jn-benefits {
+    display: grid;
+    gap: 11px;
+    list-style: none;
+    margin-top: 23px;
+    font-size: 13px;
+}
+
+.jn-benefits li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.jn-benefits li::before {
+    content: "\2713";
+    color: #a7efbd;
+    font-weight: 900;
+}
+
+.jn-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 54px;
+    margin-top: 28px;
+    padding: 12px 15px;
+    border: 1px solid rgba(255,255,255,.9);
+    border-radius: 13px;
+    background: white;
+    color: #0c6032;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform .2s ease, background .2s ease;
+}
+
+.jn-download:hover {
+    background: #e7f8ed;
+    transform: translateY(-2px);
+}
+
+.jn-download-meta {
+    margin-top: 10px;
+    color: #b6d7c3;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.jn-host-guide {
+    margin-top: 27px;
+    padding-top: 23px;
+    border-top: 1px solid rgba(255,255,255,.18);
+}
+
+.jn-host-guide h4 {
+    color: #b2e7c3;
+    font-size: 10px;
+    letter-spacing: 1.1px;
+}
+
+.jn-host-guide ol {
+    margin-top: 14px;
+    padding-left: 17px;
+    color: #e5f4eb;
+    font-size: 12px;
+    line-height: 1.75;
+}
+
+.jn-host-guide li + li {
+    margin-top: 7px;
+}
+
+.jn-host-note {
+    margin-top: 20px;
+    color: #b6d7c3;
+    font-size: 11px;
+    line-height: 1.65;
+}
+
+@media (max-width: 980px) {
+    .jn-body { padding: 30px; }
+    .jn-columns { gap: 25px; grid-template-columns: minmax(0, 1.2fr) minmax(280px, 1fr); }
+    .jn-intro { align-items: flex-start; flex-direction: column; gap: 9px; }
+    .jn-join h2 { font-size: 64px; }
+    .jn-host { padding: 25px; }
+}
+
+@media (max-width: 760px) {
+    .jn-section { border-radius: 24px; scroll-margin-top: 20px; }
+    .jn-body { padding: 26px 22px; }
+    .jn-columns { grid-template-columns: 1fr; gap: 30px; }
+    .jn-intro { margin-bottom: 27px; padding-bottom: 22px; }
+    .jn-join h2 { font-size: clamp(52px, 14vw, 72px); letter-spacing: -2.5px; }
+    .jn-address { padding: 17px; }
+    .jn-address code { font-size: 20px; }
+    .jn-host { padding: 27px 23px; }
+    .jn-host h3 { font-size: 34px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .jn-download { transition: none; }
+    .jn-download:hover { transform: none; }
+}
+
+.jn-host-links { margin-top: 10px; text-align: center; color: #b6d7c3; font-size: 11px; }
+.jn-host-links a { color: #e6fff0; text-underline-offset: 3px; }
+.jn-host-links a:hover { color: #fff; }

@@ -1,0 +1,14 @@
+Upload these files into the root of your existing JanekTech website, preserving the folder structure:
+
+index.html (replaces the old homepage)
+style.css (replaces the old stylesheet)
+network.js (new copy-address interaction)
+images/jn-logo.png (your provided JanekNetwork image)
+downloads/JanekNetworkAgent.exe (relay app download)
+downloads/README-connect.txt (setup instructions)
+
+Merge images/ and downloads/ into your existing folders. Keep your existing images/logo.png, images/background.png, apps, and other website files. The original Downloads files have not been overwritten.
+
+The new section appears immediately below the welcome hero and above Recent information / latest projects. The relay download button links to downloads/JanekNetworkAgent.exe. The server address is janeknetwork.janektech.pl. The layout was checked at desktop and mobile widths, and the copy-address button and download response were verified.
+
+Existing images/logo.png and images/background.png were not supplied; their original references are preserved and they should remain on your website.

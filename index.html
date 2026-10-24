@@ -72,6 +72,97 @@
 
         </section>
 
+
+        <section class="jn-section glass-card" id="janeknetwork" aria-labelledby="jn-join-title">
+            <div class="jn-banner">
+                <img src="images/jn-logo.png"
+                     alt="JanekNetwork — open your Minecraft server to the world without opening a router port"
+                     width="1640" height="664" loading="lazy" decoding="async">
+            </div>
+
+            <div class="jn-body">
+                <div class="jn-intro">
+                    <span class="section-kicker">MINECRAFT JAVA EDITION</span>
+                    <p>Play with friends. Share your world. Meet on JanekNetwork.</p>
+                </div>
+
+                <div class="jn-columns">
+                    <div class="jn-join">
+                        <h2 id="jn-join-title">HOW TO<br><span>JOIN.</span></h2>
+                        <p class="jn-lead">One address. A whole network of servers.</p>
+
+                        <div class="jn-address">
+                            <span class="jn-address-label">MINECRAFT SERVER ADDRESS</span>
+                            <div class="jn-address-row">
+                                <code id="jn-server-address">janeknetwork.janektech.pl</code>
+                                <button class="jn-copy" type="button" id="jn-copy-address" aria-label="Copy Minecraft server address">
+                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                        <rect x="8" y="8" width="12" height="13" rx="2"></rect>
+                                        <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"></path>
+                                    </svg>
+                                    <span id="jn-copy-label">Copy IP</span>
+                                </button>
+                            </div>
+                            <p class="jn-copy-status" id="jn-copy-status" role="status" aria-live="polite">Add this address in Minecraft Multiplayer.</p>
+                        </div>
+
+                        <ol class="jn-steps">
+                            <li>
+                                <span class="jn-step-number" aria-hidden="true">01</span>
+                                <div><h3>Open Minecraft</h3><p>Go to <strong>Multiplayer</strong>, then <strong>Add Server</strong>.</p></div>
+                            </li>
+                            <li>
+                                <span class="jn-step-number" aria-hidden="true">02</span>
+                                <div><h3>Enter the address</h3><p>Paste the address above, save it, and join JanekNetwork.</p></div>
+                            </li>
+                            <li>
+                                <span class="jn-step-number" aria-hidden="true">03</span>
+                                <div><h3>Pick your server</h3><p>Choose a server from the lobby menu and start playing.</p></div>
+                            </li>
+                        </ol>
+                        <p class="jn-compatibility">Joining a modded server? Use its matching Minecraft version and mods.</p>
+                    </div>
+
+                    <aside class="jn-host" aria-labelledby="jn-host-title">
+                        <span class="jn-host-kicker">BRING YOUR OWN WORLD</span>
+                        <h3 id="jn-host-title">OPEN YOUR SERVER<br>TO THE WORLD.</h3>
+                        <p class="jn-host-description">Host your Minecraft server with MCC, then use JanekNetwork to open it to the world. Let friends connect without opening a port on your router.</p>
+
+                        <ul class="jn-benefits">
+                            <li>No router port forwarding</li>
+                            <li>No MCC or registration key</li>
+                            <li>A simple Windows app</li>
+                        </ul>
+
+                        <a class="jn-download" href="https://www.mediafire.com/file/3u5zgt38cj2emam/JanekNetworkAgent.exe/file" download="JanekNetworkAgent.exe">
+                            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                <path d="M12 3v12m-5-5 5 5 5-5M4 16v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"></path>
+                            </svg>
+                            Download relay app
+                        </a>
+						<a class="jn-download" href="apps/mcc/app.html" download="JanekNetworkAgent.exe">
+                            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                <path d="M12 3v12m-5-5 5 5 5-5M4 16v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"></path>
+                            </svg>
+                            Host your server with mcc
+                        </a>
+                        <p class="jn-download-meta">Free · Windows 64-bit · No Python needed</p>
+                        <p class="jn-host-links"><a href="downloads/README-connect.txt" target="_blank" rel="noopener">Setup guide</a></p>
+
+                        <div class="jn-host-guide">
+                            <h4>GET LINKED IN THREE STEPS</h4>
+                            <ol>
+                                <li>Start your Minecraft server in MCC.</li>
+                                <li>Open the relay app and enter your server details.</li>
+                                <li>Click <strong>Link server</strong> and keep the app open.</li>
+                            </ol>
+                        </div>
+                        <p class="jn-host-note">Friends join through the same JanekNetwork address and select your server in the lobby.</p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
         <section class="content-grid">
             <aside class="news-panel glass-card">
                 <div class="section-heading">
@@ -163,5 +254,6 @@
         <span>JanekTech.pl | Made in WebsiteBuilder 5</span>
         <span>jan.g © 2026</span>
     </footer>
+    <script src="network.js" defer></script>
 </body>
 </html>
