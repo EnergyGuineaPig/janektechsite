@@ -91,15 +91,11 @@ a {
     text-decoration: none;
 }
 
-.brand-mark {
+.brand img {
     width: 46px;
     height: 46px;
-    display: grid;
-    place-items: center;
-    border-radius: 14px;
-    color: white;
-    background: linear-gradient(135deg, var(--green), var(--green-bright));
-    box-shadow: 0 8px 20px rgba(23,138,74,.23);
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 .nav-links {
