@@ -839,3 +839,7 @@ footer {
         text-align: center;
     }
 }
+/* Keep long paths and download details readable. */
+.feature p, .download-details strong, .requirements strong { overflow-wrap: anywhere; }
+.quick-info { grid-template-columns: 1fr; }
+@media (max-width:1050px) { .quick-info { grid-template-columns: repeat(2,minmax(0,1fr)); } }
