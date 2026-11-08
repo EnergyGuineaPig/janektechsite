@@ -3,257 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="JanekTech app information and download page.">
-    <title>Website Builder 4.3 | JanekTech</title>
+    <meta name="description" content="Meet Website Builder 6: a free Windows code editor with live previews, responsive device sizes, styles, addons and local Apache/PHP testing.">
+    <meta name="theme-color" content="#24732d">
+    <title>Website Builder 6 | JanekTech</title>
+    <link rel="canonical" href="https://janektech.pl/apps/wb/app.html">
+    <link rel="icon" href="media/wb6-icon.png" type="image/png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="JanekTech">
+    <meta property="og:title" content="Website Builder 6 — Create what comes next">
+    <meta property="og:description" content="Your code, your preview, your workflow. Explore the new Website Builder for Windows.">
+    <meta property="og:url" content="https://janektech.pl/apps/wb/app.html">
+    <meta property="og:image" content="https://janektech.pl/apps/wb/media/wb6-poster.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Website Builder 6 | JanekTech">
+    <meta name="twitter:description" content="Build, preview and test your next website in one workspace.">
+    <meta name="twitter:image" content="https://janektech.pl/apps/wb/media/wb6-poster.webp">
+    <script>document.documentElement.classList.add('js');</script>
     <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <div class="background-layer" aria-hidden="true"></div>
     <div class="background-overlay" aria-hidden="true"></div>
-
     <header class="navbar">
-        <a class="brand" href="../../index.html">
-            <img src="../../images/logo.png" alt="JanekTech logo" width="46" height="46" style="width:46px;height:46px;object-fit:contain;flex-shrink:0;">
-            <span>JanekTech</span>
-        </a>
-
-        <button class="mobile-menu-button" id="mobile-menu-button" aria-label="Open navigation">☰</button>
-
-        <nav class="nav-links" id="nav-links" aria-label="Main navigation">
-            <a href="../../index.html">Home</a>
-            <a class="active" href="../appmenu.html">Apps</a>
-            <a href="http://janektechphp.playit.plus/janektech/community.php">Community</a>
-        </nav>
+        <a class="brand" href="../../index.html"><img src="../../images/logo.png" alt="" width="46" height="46"><span>JanekTech</span></a>
+        <button class="mobile-menu-button" id="mobile-menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">☰</button>
+        <nav class="nav-links" id="nav-links" aria-label="Main navigation"><a href="../../index.html">Home</a><a class="active" href="../appmenu.html">Apps</a><a href="http://janektechphp.playit.plus/janektech/community.php">Community</a></nav>
     </header>
-
-    <main class="page-shell">
-        <nav class="breadcrumbs" aria-label="Breadcrumb">
-            <a href="../../index.html">Home</a>
-            <span>›</span>
-            <a href="../appmenu.html">Apps</a>
-            <span>›</span>
-            <strong>Website Builder 4.3</strong>
-        </nav>
-
-        <section class="app-hero glass-card">
-            <div class="app-logo-panel">
-                <img src="../../images/apps/website-builder.png" alt="Website Builder 4.3 logo">
-            </div>
-
+    <main class="page-shell" id="main">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span aria-hidden="true">/</span><a href="../appmenu.html">Apps</a><span aria-hidden="true">/</span><span aria-current="page">Website Builder 6</span></nav>
+        <section class="app-hero glass-card" aria-labelledby="app-title">
             <div class="app-heading">
-                <span class="eyebrow">WEBSITE TOOL</span>
-                <h1>Website Builder 5.2</h1>
-                <p class="app-summary">
-                    Create and edit websites with JanekTech desktop editor,
-                    addon support and downloadable community styles.
-                </p>
-
-                <div class="app-tags">
-                    <span>Windows</span>
-                    <span>Version 5.2</span>
-                    <span>Free</span>
-                    <span class="status-tag">Current release</span>
-                </div>
-
-                <div class="hero-actions">
-                    <a class="primary-button" href="#download">Download app</a>
-                    <a class="secondary-button" href="#screenshots">View screenshots</a>
-                </div>
+                <div class="product-identity"><img src="media/wb6-icon.png" alt="Website Builder app icon" width="64" height="64"><span class="eyebrow">YOUR NEXT IDEA STARTS HERE</span></div>
+                <h1 id="app-title">Website Builder <span class="version-six">6</span></h1>
+                <p class="app-summary">Your code. Your preview. Your workflow.<br>Build, preview and test your next website in one workspace.</p>
+                <div class="app-tags"><span>Windows 10 / 11</span><span>Free</span><span>HTML · CSS · JavaScript · PHP</span></div>
+                <div class="hero-actions"><a class="primary-button" href="#download">Get Website Builder <span aria-hidden="true">↗</span></a><a class="secondary-button" href="#trailer">Watch the trailer <span aria-hidden="true">▶</span></a></div>
+                <p class="hero-note">Local editing works without a JanekTech account.</p>
             </div>
-
-            <aside class="quick-info">
-                <div>
-                    <span>Latest version</span>
-                    <strong>5.2.0</strong>
-                </div>
-                <div>
-                    <span>Platform</span>
-                    <strong>Windows 10 / 11</strong>
-                </div>
-            </aside>
+            <figure class="hero-product"><img src="media/wb6-editor.webp" alt="Website Builder 6 in its VS Code theme, showing the editor and an example website preview" width="1920" height="1020" fetchpriority="high"><figcaption><span class="preview-dot" aria-hidden="true"></span>Code and preview, side by side.</figcaption></figure>
         </section>
-
+        <div class="release-strip" aria-label="Website Builder highlights"><span><strong>See it as you build</strong>Live preview</span><span><strong>Find your flow</strong>Everyday editor tools</span><span><strong>Test on your terms</strong>Manual server controls</span></div>
         <div class="content-layout">
             <div class="main-column">
-                <section class="section-card glass-card">
-                    <div class="section-heading">
-                        <span class="section-number">01</span>
-                        <div>
-                            <p class="eyebrow">ABOUT</p>
-                            <h2>Build websites more easily</h2>
-                        </div>
-                    </div>
-
-                    <p>
-                        Website Builder is designed for people who want to create a website
-                        without using paid software with things that they not need. It includes
-                        a addon system for people that want something custom and project tools.
-                    </p>
-
+                <section class="section-card glass-card" id="features" aria-labelledby="features-title">
+                    <div class="section-heading"><span class="section-number" aria-hidden="true">01</span><div><p class="eyebrow">MADE TO CREATE</p><h2 id="features-title">A clearer space for your ideas.</h2></div></div>
+                    <p>Start with a local template or a saved style, open your project folder, and make it your own. Website Builder 6 brings the editor, preview and testing tools together while keeping you in control.</p>
                     <div class="feature-grid">
-
-                        <article class="feature">
-                            <span class="feature-icon">＋</span>
-                            <h3>Addon engine</h3>
-                            <p>Install extra tools created for Website Builder.</p>
-                        </article>
-
-                        <article class="feature">
-                            <span class="feature-icon">◫</span>
-                            <h3>Style library</h3>
-                            <p>Download and upload website styles from the community.</p>
-                        </article>
-
-                        <article class="feature">
-                            <span class="feature-icon">↗</span>
-                            <h3>Quick preview</h3>
-                            <p>Open and test the current website project quickly.</p>
-                        </article>
+                        <article class="feature"><span class="feature-icon" aria-hidden="true">&lt;/&gt;</span><h3>Write it. See it.</h3><p>Edit your code alongside a live page preview. Switch between desktop, tablet and phone widths.</p></article>
+                        <article class="feature"><span class="feature-icon" aria-hidden="true">⌨</span><h3>Stay in flow</h3><p>Syntax highlighting, line numbers, Emmet suggestions, automatic indentation and comment shortcuts keep everyday edits moving.</p></article>
+                        <article class="feature"><span class="feature-icon" aria-hidden="true">⌕</span><h3>Find what matters</h3><p>Find and replace in your file, search across the project, jump to a line or use the command palette.</p></article>
+                        <article class="feature"><span class="feature-icon" aria-hidden="true">▤</span><h3>Keep your workspace</h3><p>Work across tabs with Save As, Save All, recent files, unsaved-change prompts and session recovery.</p></article>
+                        <article class="feature"><span class="feature-icon" aria-hidden="true">＋</span><h3>Make it yours</h3><p>Use the original style chooser, local page templates and Python addons. Choose a theme, including VS Code.</p></article>
+                        <article class="feature"><span class="feature-icon" aria-hidden="true">▷</span><h3>Test on your terms</h3><p>Detect Apache, PHP or a supported static-file server. Configure your project and click Start when you are ready.</p></article>
                     </div>
                 </section>
-
-                <section class="section-card glass-card" id="screenshots">
-                    <div class="section-heading">
-                        <span class="section-number">02</span>
-                        <div>
-                            <p class="eyebrow">GALLERY</p>
-                            <h2>Screenshots</h2>
-                        </div>
-                    </div>
-
+                <section class="section-card glass-card" id="trailer" aria-labelledby="trailer-title">
+                    <div class="section-heading"><span class="section-number" aria-hidden="true">02</span><div><p class="eyebrow">MEET WEBSITE BUILDER 6</p><h2 id="trailer-title">Create what comes next.</h2></div></div>
+                    <figure class="trailer-player"><video controls playsinline preload="none" poster="media/wb6-poster.webp" width="1280" height="720" aria-label="Website Builder 6 product trailer"><source src="media/wb6-trailer.mp4" type="video/mp4">Your browser cannot play this video. <a href="media/wb6-trailer.mp4">Download the trailer instead.</a></video><figcaption>A 70-second look at the workspace, previews and local testing. Music only; features are shown with on-screen text.</figcaption></figure>
+                </section>
+                <section class="section-card glass-card" id="screenshots" aria-labelledby="screenshots-title">
+                    <div class="section-heading"><span class="section-number" aria-hidden="true">03</span><div><p class="eyebrow">TAKE A CLOSER LOOK</p><h2 id="screenshots-title">Your workspace, in focus.</h2></div></div>
                     <div class="screenshot-grid">
-                        <a class="screenshot-item" href="1.png" target="_blank">
-                            <img src="1.png" alt="Website Builder main window">
-                            <span>Main window</span>
-                        </a>
-
-                        <a class="screenshot-item" href="2.png" target="_blank">
-                            <img src="3.png" alt="Website Builder addon manager">
-                            <span>Emmet</span>
-                        </a>
-
-                        <a class="screenshot-item screenshot-wide" href="3.png" target="_blank">
-                            <img src="2.png" alt="Website Builder editor">
-                            <span>Settings</span>
-                        </a>
+                        <a class="screenshot-item screenshot-wide" href="media/wb6-editor.webp" target="_blank" rel="noopener"><img src="media/wb6-editor.webp" alt="The WB6 editor in the VS Code theme, with an example page preview" width="1920" height="1020" loading="lazy"><span>VS Code theme · editor and example preview ↗</span></a>
+                        <a class="screenshot-item screenshot-wide" href="media/wb6-testing.webp" target="_blank" rel="noopener"><img src="media/wb6-testing.webp" alt="Local testing controls with Apache detected, a Configure button and the server stopped" width="810" height="620" loading="lazy"><span>Configure first. Start when you are ready. ↗</span></a>
                     </div>
                 </section>
-
-                <section class="section-card glass-card">
-                    <div class="section-heading">
-                        <span class="section-number">03</span>
-                        <div>
-                            <p class="eyebrow">RELEASE NOTES</p>
-                            <h2>What's new</h2>
-                        </div>
-                    </div>
-
+                <section class="section-card glass-card" aria-labelledby="testing-title">
+                    <div class="section-heading"><span class="section-number" aria-hidden="true">04</span><div><p class="eyebrow">LOCAL TESTING</p><h2 id="testing-title">Your server. Your controls.</h2></div></div>
+                    <ol class="testing-steps"><li><strong>Choose your project.</strong><span>Open the local testing window and select your website folder.</span></li><li><strong>Configure your server.</strong><span>Choose the server, executable paths, port and testing options. Installed runtimes are detected; missing PHP can be downloaded and verified automatically.</span></li><li><strong>Click Start server.</strong><span>Opening the controls, detecting a runtime or finishing setup leaves the server stopped. Start, open in your browser and stop whenever you choose.</span></li></ol>
+                    <p class="testing-footnote">Python's local server is used for static files only. PHP projects use PHP or an Apache installation configured for PHP.</p>
+                </section>
+                <section class="section-card glass-card" id="release-notes" aria-labelledby="release-title">
+                    <div class="section-heading"><span class="section-number" aria-hidden="true">05</span><div><p class="eyebrow">WHAT'S NEW</p><h2 id="release-title">A new chapter for Website Builder.</h2></div></div>
                     <div class="timeline">
-                    <article>
-                            <span class="timeline-dot"></span>
-                            <div>
-                                <div class="timeline-title">
-                                    <h3>Version 5.2.0</h3>
-                                    <time>Current</time>
-                                </div>
-                                <ul>
-                                    <li>Added Settings button.</li>
-                                    <li>Added autofill and emmet</li>
-                                    <li>Changed file creation system</li>
-                                </ul>
-                            </div>
-                        </article>
-                        <article>
-                            <span class="timeline-dot"></span>
-                            <div>
-                                <div class="timeline-title">
-                                    <h3>Version 5.0.0</h3>
-                                    <time>previous</time>
-                                </div>
-                                <ul>
-                                    <li>Added improved addon support.</li>
-                                    <li>Added automatic style upload and creation tools.</li>
-                                    <li>Updated the interface and installer.</li>
-                                </ul>
-                            </div>
-                        </article>
-
-                        <article>
-                            <span class="timeline-dot"></span>
-                            <div>
-                                <div class="timeline-title">
-                                    <h3>Version 4.2.0</h3>
-                                    <time>older</time>
-                                </div>
-                                <ul>
-                                    <li>Improved project loading and editor stability.</li>
-                                    <li>Added new app styling controls.</li>
-                                </ul>
-                            </div>
-                        </article>
+                        <article><span class="timeline-dot" aria-hidden="true"></span><div><div class="timeline-title"><h3>Version 6</h3><span class="release-label">This version</span></div><ul><li>A refreshed interface, coordinated themes and responsive live-preview sizes.</li><li>File, Edit, View, Run and Tools menus, plus a searchable command palette.</li><li>Project search, line editing, comments, zoom and PHP/JSON syntax checks.</li><li>Save As, Save All, recent files and workspace recovery.</li><li>A redesigned local-testing window with saved configuration and explicit Start/Stop controls.</li><li>Installed-server detection and automatic, verified portable PHP setup when needed.</li></ul></div></article>
+                        <article><span class="timeline-dot" aria-hidden="true"></span><div><div class="timeline-title"><h3>Version 5.2</h3><span class="release-label">Earlier</span></div><ul><li>Settings, autofill and Emmet tools.</li><li>Updated file creation.</li></ul></div></article>
+                        <article><span class="timeline-dot" aria-hidden="true"></span><div><div class="timeline-title"><h3>Version 5.0</h3><span class="release-label">Earlier</span></div><ul><li>Improved addon support and style creation tools.</li><li>Interface and installer updates.</li></ul></div></article>
                     </div>
                 </section>
             </div>
-
             <aside class="side-column">
-                <section class="download-card glass-card" id="download">
-                    <span class="download-icon">↓</span>
-                    <p class="eyebrow">LATEST RELEASE</p>
-                    <h2>Download Website Builder</h2>
-                    <p>Installer for 64-bit Windows.</p>
-
-                    <a class="download-button" href="https://download.janektech.pl/download.php?app=websitebuilder">
-                        <span>
-                            <small>Download</small>
-                            <strong>Website Builder 5.2</strong>
-                        </span>
-                        <b>↓</b>
-                    </a>
-
-                    <div class="download-details">
-                        <div><span>File</span><strong>wb5.2setup.exe</strong></div>
-                        <div><span>Installer</span><strong>JanekTech Setup</strong></div>
-                    </div>
-
-                </section>
-
-                <section class="side-card glass-card">
-                    <h2>System requirements</h2>
-                    <ul class="requirements">
-                        <li><span>OS</span><strong>Windows 10 or 11</strong></li>
-                        <li><span>Architecture</span><strong>64-bit</strong></li>
-                        <li><span>RAM</span><strong>2 GB minimum</strong></li>
-                        <li><span>Storage</span><strong>500-1200 MB free</strong></li>
-                    </ul>
-                </section>
-
-                <section class="side-card glass-card">
-                    <h2>Useful links</h2>
-                    <div class="useful-links">
-                        <a href="#">Addon Documentation <span>↗</span></a>
-                    </div>
-                </section>
-
-
-
+                <section class="download-card glass-card" id="download" aria-labelledby="download-title"><span class="download-icon" aria-hidden="true">↓</span><p class="eyebrow">MAKE YOUR NEXT IDEA REAL</p><h2 id="download-title">Get Website Builder</h2><p>Choose a Windows release on JanekTech Downloads.</p><a class="download-button" href="https://download.janektech.pl/download.php?app=websitebuilder"><span><small>JanekTech Downloads</small><strong>Open download page</strong></span><b aria-hidden="true">↗</b></a><div class="download-details"><div><span>This page</span><strong>Website Builder 6</strong></div><div><span>Platform</span><strong>Windows · 64-bit</strong></div><div><span>Price</span><strong>Free</strong></div></div><p class="download-note">Available versions, filenames and file details are listed on the download page.</p></section>
+                <section class="side-card glass-card" aria-labelledby="requirements-title"><h2 id="requirements-title">Before you start</h2><ul class="requirements"><li><span>OS</span><strong>Windows 10 / 11</strong></li><li><span>Architecture</span><strong>64-bit</strong></li><li><span>Editing</span><strong>Local project files</strong></li><li><span>PHP testing</span><strong>PHP or Apache + PHP</strong></li></ul><p class="side-note">The download page includes the details for each available release. Community services may require an account.</p></section>
+                <section class="side-card glass-card" aria-labelledby="links-title"><h2 id="links-title">Keep exploring</h2><div class="useful-links"><a href="../../docs/wb/addonengine.pdf" target="_blank" rel="noopener">Addon documentation <span aria-hidden="true">↗</span></a><a href="http://janektechphp.playit.plus/janektech/wb/catalog.php">Community catalog <span aria-hidden="true">↗</span></a><a href="#release-notes">Version 6 changes <span aria-hidden="true">↑</span></a><a href="../appmenu.html">More JanekTech apps <span aria-hidden="true">↗</span></a></div></section>
             </aside>
         </div>
-
-        
     </main>
-
-    <footer>
-        <span>JanekTech.pl</span>
-        <span>jan.g © 2026</span>
-    </footer>
-
-    <script>
-        const menuButton = document.getElementById("mobile-menu-button");
-        const navLinks = document.getElementById("nav-links");
-
-        menuButton.addEventListener("click", () => {
-            navLinks.classList.toggle("show");
-        });
-    </script>
+    <footer><a href="../../index.html">JanekTech.pl</a><span>Website Builder 6 · jan.g © 2026</span></footer>
 </body>
 </html>
