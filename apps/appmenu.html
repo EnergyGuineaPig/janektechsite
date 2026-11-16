@@ -6,29 +6,29 @@
     <meta name="description" content="Browse and download JanekTech applications.">
     <title>Apps | JanekTech</title>
     <link rel="stylesheet" href="appmenu.css">
+    <meta name="theme-color" content="#0b1510">
+    <link rel="stylesheet" href="../site-theme.css">
+    <link rel="icon" href="../favicon.ico">
 </head>
-<body>
+<body class="jt-site ">
     <div class="background-layer" aria-hidden="true"></div>
     <div class="background-overlay" aria-hidden="true"></div>
 
-    <header class="navbar">
-        <a class="brand" href="../index.html">
-            <img src="../images/logo.png" alt="JanekTech logo">
-            <span>JanekTech</span>
-        </a>
-
-        <nav class="nav-links" aria-label="Main navigation">
-            <a href="../index.html">Back</a>
-            <a href="../redirect.html?url=http://janektechphp.playit.plus/janektech/community.php">Community</a>
-            <a href="../terms.html">Terms</a>
-        </nav>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="jt-header">
+        <div class="jt-container jt-header-wrap">
+            <a class="jt-brand" href="../index.html"><img src="../images/logo.png" alt="" width="31" height="31"><span>JanekTech</span></a>
+            
+            <nav class="jt-nav" id="nav-links" aria-label="Main navigation"><a href="../index.html">Home</a><a href="../apps/appmenu.html" aria-current="page">Apps</a><a href="../docs/docs.html">Docs</a><a href="http://janektechphp.playit.plus/janektech/community.php">Community</a></nav>
+            <a class="jt-login" href="http://janektechphp.playit.plus/janektech/login.html">Log in <span aria-hidden="true">↗</span></a>
+        </div>
     </header>
 
-    <main class="page-shell">
+    <main class="page-shell" id="main">
         <section class="apps-hero glass-card">
             <div>
                 <span class="eyebrow">JANEKTECH SOFTWARE</span>
-                <h1>App menu</h1>
+                <h1>Apps</h1>
                 <p>Browse JanekTech apps, utilities, server tools and website creation software.</p>
             </div>
 
@@ -44,27 +44,39 @@
         <section class="toolbar glass-card">
             <div class="filter-buttons" aria-label="App categories">
                 <button class="filter active" data-filter="all">All</button>
+                <button class="filter" data-filter="developer">Developer tools</button>
                 <button class="filter" data-filter="website">Website tools</button>
                 <button class="filter" data-filter="server">Server tools</button>
                 <button class="filter" data-filter="utility">Utilities</button>
                 <button class="filter" data-filter="legacy">Legacy</button>
             </div>
-            <p><strong id="visible-count">13</strong> apps shown</p>
+            <p><strong id="visible-count">11</strong> apps shown</p>
         </section>
 
 
         
         <section class="apps-grid" id="apps-grid">
-            <article class="app-card glass-card" data-category="website" data-name="Website Builder 4.3">
+            <article class="app-card glass-card" data-category="developer" data-name="SnakeIde 1.0">
+                <div class="app-logo-wrap"><img src="../images/apps/snakeide.png" alt=""></div>
+                <div class="app-content">
+                    <span class="app-category">Python editor</span>
+                    <h2>SnakeIde 1.0</h2>
+                    <p>Write, run and debug Python and build Windows executables.</p>
+                    <div class="app-meta"><span>Python</span><span>Windows</span></div>
+                    <div class="card-actions"><a class="primary-btn" href="snakeide/app.html">View app</a></div>
+                </div>
+            </article>
+            <article class="app-card glass-card" data-category="website" data-name="Website Builder 6.0">
                 <div class="app-logo-wrap"><img src="../images/apps/website-builder.png" alt="Website Builder logo"></div>
                 <div class="app-content">
                     <span class="app-category">Website tool</span>
                     <h2>Website Builder 6.0</h2>
                     <p>Create websites, addons and downloadable styles.</p>
                     <div class="app-meta"><span>Current</span><span>Windows</span></div>
-                    <div class="card-actions"><a class="primary-btn" href="wb/app.html">View app</a>
+                    <div class="card-actions"><a class="primary-btn" href="wb/app.html">View app</a></div>
+                </div>
             </article>
-            <article class="app-card glass-card" data-category="server" data-name="MCC3">
+            <article class="app-card glass-card" data-category="server legacy" data-name="JanekLauncher">
                 <div class="app-logo-wrap"><img src="../images/apps/icon-9.png" alt="MCC3 logo"></div>
                 <div class="app-content">
                     <span class="app-category">Gaming</span>
@@ -74,7 +86,7 @@
                     <div class="card-actions"><a class="primary-btn" href="janeklauncher/app.html">View app</a>
                 </div>
              </article>
-            <article class="app-card glass-card" data-category="server" data-name="MCC3">
+            <article class="app-card glass-card" data-category="server legacy" data-name="MCC">
                 <div class="app-logo-wrap"><img src="../images/apps/mcc4.png" alt="MCC3 logo"></div>
                 <div class="app-content">
                     <span class="app-category">Server tool</span>
@@ -84,15 +96,15 @@
                     <div class="card-actions"><a class="primary-btn" href="mcc/app.html">View app</a>
                 </div>
              </article>
-            <article class="app-card glass-card" data-category="utility" data-name="OnionWeb">
+            <article class="app-card glass-card" data-category="utility" data-name="Setup Mk4 Creator">
                 <div class="app-logo-wrap"><img src="../images/apps/sm4c.png" alt="Website Builder logo"></div>
                 <div class="app-content">
                     <span class="app-category">Utility</span>
                     <h2>Setup Mk4 Creator</h2>
                     <p>Create easy to use custom setups</p>
                     <div class="app-meta"><span>Current</span><span>Windows</span></div>
-                    <div class="card-actions"><a class="primary-btn" href="sm4c/app.html">View app</a>
-                        
+                    <div class="card-actions"><a class="primary-btn" href="sm4c/app.html">View app</a></div>
+                </div>
             </article>
         
             <article class="app-card glass-card" data-category="server" data-name="OnionWeb">
@@ -102,7 +114,8 @@
                     <h2>OnionWeb</h2>
                     <p>Host tor's .onion websites</p>
                     <div class="app-meta"><span>Current</span><span>Windows</span></div>
-                    <div class="card-actions"><a class="primary-btn" href="onion/app.html">View app</a>
+                    <div class="card-actions"><a class="primary-btn" href="onion/app.html">View app</a></div>
+                </div>
             </article>
 
             <article class="app-card glass-card" data-category="website" data-name="Website Builder Direct">
@@ -168,9 +181,13 @@
         </div>
     </main>
 
-    <footer>
-        <span>JanekTech.pl</span>
-        <span>jan.g © 2026</span>
+    <footer class="jt-footer">
+        <a href="../index.html">JanekTech <span>© 2026</span></a>
+        <nav aria-label="Footer links">
+            <a href="../docs/docs.html">Documentation</a>
+            <a href="../apps/ver/index.html">Version archive</a>
+            <a href="../terms.html">Terms</a>
+        </nav>
     </footer>
 
     <script>
@@ -182,6 +199,7 @@
         let activeFilter = 'all';
 
         function updateApps() {
+            filters.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === activeFilter)));
             const query = searchInput.value.trim().toLowerCase();
             let visible = 0;
 
@@ -209,6 +227,7 @@
                 updateApps();
             });
         });
+        updateApps();
     </script>
 </body>
 </html>

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b1510">
+    <meta name="description" content="Explore SnakeIde 1.0, a Python editor for Windows with a debugger, project tools and a configurable executable build workflow.">
+    <title>SnakeIde 1.0 | JanekTech</title>
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../ftj/app.css">
+    <link rel="stylesheet" href="../../site-theme.css">
+    <script src="../wb/app.js" defer></script>
+    <script src="trailer.js" defer></script>
+</head>
+<body class="jt-site">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="jt-header jt-header-collapsible">
+        <div class="jt-container jt-header-wrap">
+            <a class="jt-brand" href="../../index.html"><img src="../../images/logo.png" alt="" width="31" height="31"><span>JanekTech</span></a>
+            <button class="jt-menu" id="mobile-menu-button" type="button" aria-label="Open navigation" aria-controls="nav-links" aria-expanded="false">☰</button>
+            <nav class="jt-nav" id="nav-links" aria-label="Main navigation">
+                <a href="../../index.html">Home</a>
+                <a href="../appmenu.html" aria-current="page">Apps</a>
+                <a href="../../docs/docs.html">Docs</a>
+                <a href="http://janektechphp.playit.plus/janektech/community.php">Community</a>
+            </nav>
+            <a class="jt-login" href="http://janektechphp.playit.plus/janektech/login.html">Log in <span aria-hidden="true">↗</span></a>
+        </div>
+    </header>
+
+    <main class="page-shell" id="main">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="../../index.html">Home</a>
+            <span aria-hidden="true">/</span>
+            <a href="../appmenu.html">Apps</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">SnakeIde 1.0</span>
+        </nav>
+        <section class="app-hero glass-card" aria-labelledby="app-title">
+            <div class="app-logo-panel">
+                <img src="../../images/apps/snakeide.png" alt="Blue SnakeIde snake wrapped around a notepad" width="300" height="300">
+            </div>
+            <div class="app-heading">
+                <span class="eyebrow">Python IDE</span>
+                <h1 id="app-title">SnakeIde 1.0</h1>
+                <p class="app-summary">Write, run and debug Python on Windows. Manage your project’s interpreter and build executables from the same workspace.</p>
+                <div class="hero-actions">
+                    <a class="primary-button" href="https://download.janektech.pl/download.php?app=snakeide">Download SnakeIde <span aria-hidden="true">↗</span></a>
+                    <a class="secondary-button" href="#trailer">Watch trailer</a>
+                </div>
+            </div>
+            <aside class="quick-info" aria-label="App information">
+                <div><span>Version</span><strong>1.0</strong></div>
+                <div><span>Platform</span><strong>Windows</strong></div>
+                <div><span>Language</span><strong>Python</strong></div>
+            </aside>
+        </section>
+
+        <div class="content-layout">
+            <div class="main-column">
+                <section class="section-card glass-card" id="features" aria-labelledby="features-title">
+                    <div class="section-heading"><div><h2 id="features-title">Editor and project tools</h2></div></div>
+                    <div class="feature-grid">
+                        <article class="feature">
+                            <h3>Write and debug Python</h3>
+                            <p>Edit with autocomplete and syntax checks. Run scripts, use PDB breakpoints or try code in the Python Shell.</p>
+                        </article>
+                        <article class="feature">
+                            <h3>Set up project environments</h3>
+                            <p>Choose a Windows 7, Windows 10 or Custom project target. Detect compatible interpreters and see installed packages in the Library Browser.</p>
+                        </article>
+                        <article class="feature">
+                            <h3>Build a Windows executable</h3>
+                            <p>Choose your main file, edit the PyInstaller command and build a console or windowed app.</p>
+                        </article>
+                    </div>
+                </section>
+                <section class="section-card glass-card" id="trailer" aria-labelledby="trailer-title">
+                    <div class="section-heading"><div><h2 id="trailer-title">SnakeIde 1.0 trailer</h2></div></div>
+                    <figure class="snakeide-trailer">
+                        <video id="snakeide-trailer" controls playsinline preload="none" poster="media/trailer-poster.webp" aria-label="SnakeIde 1.0 trailer"
+                               data-portrait="media/snakeide-1.0-trailer-portrait.mp4" data-portrait-poster="media/trailer-portrait-poster.webp">
+                            <source src="media/snakeide-1.0-trailer.mp4" type="video/mp4">
+                        </video>
+                        <figcaption>27 seconds · Music and on-screen text</figcaption>
+                    </figure>
+                    <div class="snakeide-trailer-links" aria-label="Trailer downloads">
+                        <a class="inline-link" href="media/snakeide-1.0-trailer.mp4" download>Widescreen MP4 <span aria-hidden="true">↓</span></a>
+                        <a class="inline-link" href="media/snakeide-1.0-trailer-portrait.mp4" download>Phone MP4 <span aria-hidden="true">↓</span></a>
+                    </div>
+                </section>
+                <section class="section-card glass-card" id="screenshots" aria-labelledby="screenshots-title">
+                    <div class="section-heading"><div><h2 id="screenshots-title">Workspace preview</h2></div></div>
+                    <div class="screenshot-grid">
+                        <a class="screenshot-item screenshot-wide" href="media/editor.webp" target="_blank" rel="noopener">
+                            <img src="media/editor.webp" alt="Python editor showing project files, orbit.py, and script output" width="1100" height="650" loading="lazy">
+                            <span>Editor and script output</span>
+                        </a>
+                        <a class="screenshot-item screenshot-wide" href="media/build.png" target="_blank" rel="noopener">
+                            <img src="media/build.png" alt="Build App dialog with a main file picker, app type and editable command" width="700" height="285" loading="lazy">
+                            <span>Build App dialog</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <aside class="side-column" aria-label="Project setup">
+                <section class="side-card glass-card">
+                    <h2>Project setup</h2>
+                    <ul class="requirements">
+                        <li><span>Interpreter</span><strong>Python 3</strong></li>
+                        <li><span>Project targets</span><strong>Windows 7, Windows 10, Custom</strong></li>
+                        <li><span>Build tool</span><strong>PyInstaller</strong></li>
+                    </ul>
+                    <p class="side-note">Test executables on the Windows version you intend to support.</p>
+                </section>
+                <section class="side-card glass-card">
+                    <h2>More from JanekTech</h2>
+                    <div class="useful-links">
+                        <a href="../appmenu.html">Browse all apps <span aria-hidden="true">↗</span></a>
+                        <a href="../../docs/docs.html">Documentation <span aria-hidden="true">↗</span></a>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+    <footer class="jt-footer">
+        <a href="../../index.html">JanekTech <span>© 2026</span></a>
+        <nav aria-label="Footer links">
+            <a href="../../docs/docs.html">Documentation</a>
+            <a href="../ver/index.html">Version archive</a>
+            <a href="../../terms.html">Terms</a>
+        </nav>
+    </footer>
+</body>
+</html>

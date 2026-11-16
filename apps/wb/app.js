@@ -10,7 +10,7 @@
     };
     button.addEventListener('click', () => setOpen(button.getAttribute('aria-expanded') !== 'true'));
     navigation.addEventListener('click', (event) => { if (event.target.closest('a')) setOpen(false); });
-    document.addEventListener('click', (event) => { if (!event.target.closest('.navbar')) setOpen(false); });
+    document.addEventListener('click', (event) => { if (!event.target.closest('.jt-header')) setOpen(false); });
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape' && button.getAttribute('aria-expanded') === 'true') { setOpen(false); button.focus(); }
     });
