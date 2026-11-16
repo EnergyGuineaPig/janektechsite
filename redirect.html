@@ -5,9 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Redirecting... | JanekTech</title>
   <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#0b1510">
+    <link rel="stylesheet" href="site-theme.css">
+    <link rel="icon" href="favicon.ico">
 </head>
-<body>
-  <main class="card">
+<body class="jt-site jt-redirect">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="jt-header">
+        <div class="jt-container jt-header-wrap">
+            <a class="jt-brand" href="index.html"><img src="images/logo.png" alt="" width="31" height="31"><span>JanekTech</span></a>
+            
+            <nav class="jt-nav" id="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="apps/appmenu.html">Apps</a><a href="docs/docs.html">Docs</a><a href="http://janektechphp.playit.plus/janektech/community.php">Community</a></nav>
+            <a class="jt-login" href="http://janektechphp.playit.plus/janektech/login.html">Log in <span aria-hidden="true">↗</span></a>
+        </div>
+    </header>
+  <main class="card" id="main">
     <img src="images/logo.png" alt="JanekTech logo" width="46" height="46" style="width:46px;height:46px;object-fit:contain;flex-shrink:0;">
     <h1 id="title">Leaving JanekTech</h1>
     <p id="message">You are being redirected to another page.</p>
@@ -28,7 +40,14 @@
     <p id="error" class="error" hidden></p>
   </main>
 
-  <footer>JanekTech © 2026</footer>
+  <footer class="jt-footer">
+        <a href="index.html">JanekTech <span>© 2026</span></a>
+        <nav aria-label="Footer links">
+            <a href="docs/docs.html">Documentation</a>
+            <a href="apps/ver/index.html">Version archive</a>
+            <a href="terms.html">Terms</a>
+        </nav>
+    </footer>
 
   <script>
     const params = new URLSearchParams(location.search);
