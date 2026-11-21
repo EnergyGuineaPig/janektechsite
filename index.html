@@ -13,16 +13,16 @@
     <meta property="og:title" content="JanekTech | Windows apps and developer tools">
     <meta property="og:url" content="https://janektech.pl/">
     <meta property="og:image" content="https://janektech.pl/images/og-image.png">
-    <link rel="stylesheet" href="site-theme.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="jt-site jt-home">
+    <canvas id="matrix-background" aria-hidden="true"></canvas>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="jt-header">
         <div class="jt-container jt-header-wrap">
             <a class="jt-brand" href="index.html"><img src="images/logo.png" alt="" width="31" height="31"><span>JanekTech</span></a>
             
             <nav class="jt-nav" id="nav-links" aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="apps/appmenu.html">Apps</a><a href="docs/docs.html">Docs</a><a href="http://janektechphp.playit.plus/janektech/community.php">Community</a></nav>
-            <a class="jt-login" href="http://janektechphp.playit.plus/janektech/login.html">Log in <span aria-hidden="true">↗</span></a>
         </div>
     </header>
     <main class="jt-container" id="main">
@@ -30,34 +30,14 @@
             <div class="home-lead">
                 <p class="code-label welcome-label">Build <span aria-hidden="true">•</span> Create <span aria-hidden="true">•</span> Share</p>
                 <h1 id="home-title">Welcome to<br><em>JanekTech</em></h1>
-                <p>Apps, website tools, addons and community projects made to keep creating simple.</p>
+                <p class="home-intro">Your next idea starts here.</p>
+                <p class="home-description">Discover Windows apps and developer tools, create your own website, or upload files. Explore what you can build with JanekTech.</p>
                 <div class="home-actions">
                     <a class="primary-btn" href="apps/appmenu.html">Explore apps</a>
-                    <a class="secondary-btn" href="http://janektechphp.playit.plus/janektech/create_site_check.php">Create a site</a>
+                    <a class="secondary-btn" href="https://sites.janektech.pl/">Create a site</a>
+                    <a class="secondary-btn" href="https://files.janektech.pl/">Upload Files</a>
                 </div>
             </div>
-            <figure class="home-editor" aria-label="A sample Python workspace">
-                <div class="editor-title">
-                    <span class="editor-controls" aria-hidden="true"><i></i><i></i><i></i></span>
-                    <span>workspace.py</span>
-                    <span class="editor-language">Python</span>
-                </div>
-                <div class="editor-code">
-                    <code>
-                        <span class="code-line"><span class="line-no" aria-hidden="true">1</span><span class="syntax-key">from</span> pathlib <span class="syntax-key">import</span> Path</span>
-                        <span class="code-line"><span class="line-no" aria-hidden="true">2</span></span>
-                        <span class="code-line"><span class="line-no" aria-hidden="true">3</span><span class="syntax-key">def</span> <span class="syntax-fn">list_sources</span>(folder):</span>
-                        <span class="code-line code-active"><span class="line-no" aria-hidden="true">4</span>    <span class="syntax-key">for</span> file <span class="syntax-key">in</span> folder.glob(<span class="syntax-text">"*.py"</span>):</span>
-                        <span class="code-line"><span class="line-no" aria-hidden="true">5</span>        <span class="syntax-fn">print</span>(file.name)</span>
-                        <span class="code-line"><span class="line-no" aria-hidden="true">6</span></span>
-                        <span class="code-line"><span class="line-no" aria-hidden="true">7</span><span class="syntax-fn">list_sources</span>(Path.cwd())</span>
-                    </code>
-                </div>
-                <div class="editor-terminal">
-                    <div class="terminal-tab">Terminal</div>
-                    <code><span class="terminal-prompt">$</span> python workspace.py<br><span class="terminal-result">workspace.py</span></code>
-                </div>
-            </figure>
         </section>
 
         <section class="home-section" id="featured" aria-labelledby="featured-title">
@@ -94,7 +74,7 @@
             <div class="resource-grid">
                 <a href="docs/docs.html"><span class="resource-symbol" aria-hidden="true">{ }</span><strong>Documentation</strong><span class="resource-copy">Read the Website Builder addon guide.</span><span class="resource-arrow" aria-hidden="true">↗</span></a>
                 <a href="http://janektechphp.playit.plus/janektech/community.php"><span class="resource-symbol" aria-hidden="true">//</span><strong>Community</strong><span class="resource-copy">Find addons and share your work.</span><span class="resource-arrow" aria-hidden="true">↗</span></a>
-                <a href="http://janektechphp.playit.plus/janektech/create_site_check.php"><span class="resource-symbol" aria-hidden="true">./</span><strong>Create a site</strong><span class="resource-copy">Start a JanekTech-hosted website.</span><span class="resource-arrow" aria-hidden="true">↗</span></a>
+                <a href="https://sites.janektech.pl/"><span class="resource-symbol" aria-hidden="true">./</span><strong>Create a site</strong><span class="resource-copy">Start a JanekTech-hosted website.</span><span class="resource-arrow" aria-hidden="true">↗</span></a>
             </div>
         </section>
 
@@ -121,12 +101,107 @@
     </main>
     <footer class="jt-footer">
         <a href="index.html">JanekTech <span>© 2026</span></a>
-        <nav aria-label="Footer links">
+        <div class="jt-official">
+            <p class="code-label">Official JanekTech addresses</p>
+            <nav class="jt-domains" aria-label="Official websites">
+                <a href="https://janektech.pl/">janektech.pl</a>
+                <a href="https://sites.janektech.pl/">sites.janektech.pl</a>
+                <a href="https://files.janektech.pl/">files.janektech.pl</a>
+            </nav>
+            <p class="jt-mail">Official no-reply email: <span>noreplyjanektech@gmail.com</span></p>
+        </div>
+        <nav class="jt-footer-links" aria-label="Footer links">
             <a href="docs/docs.html">Documentation</a>
             <a href="apps/ver/index.html">Version archive</a>
             <a href="terms.html">Terms</a>
         </nav>
+        <button class="matrix-toggle" id="matrix-toggle" type="button" hidden>Pause background</button>
     </footer>
     <script src="network.js" defer></script>
+
+    <script>
+    (() => {
+        const canvas = document.getElementById('matrix-background');
+        const toggle = document.getElementById('matrix-toggle');
+        const context = canvas.getContext('2d');
+        if (!context) return;
+
+        const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        let playing = !motion.matches;
+        let width = 0, height = 0, streams = [], frame = 0, previous = 0;
+        const step = 25;
+        const digits = '0123456789';
+
+        function draw(advance) {
+            context.clearRect(0, 0, width, height);
+            context.font = '14px ui-monospace, Consolas, monospace';
+            for (const stream of streams) {
+                for (let row = 0; row < stream.length; row++) {
+                    const y = stream.y - row * step;
+                    if (y < -step || y > height + step) continue;
+                    const alpha = (1 - row / stream.length) * 0.52;
+                    context.fillStyle = row === 0
+                        ? 'rgba(113, 167, 119, 0.75)'
+                        : `rgba(36, 120, 46, ${alpha})`;
+                    context.fillText(stream.digits[row], stream.x, y);
+                }
+                if (advance) {
+                    stream.y += stream.speed;
+                    if (Math.random() > 0.88) {
+                        const index = Math.floor(Math.random() * stream.length);
+                        stream.digits[index] = digits[Math.floor(Math.random() * digits.length)];
+                    }
+                    if (stream.y - stream.length * step > height) stream.y = -step;
+                }
+            }
+        }
+
+        function resize() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            const ratio = Math.min(window.devicePixelRatio || 1, 1.5);
+            canvas.width = Math.round(width * ratio);
+            canvas.height = Math.round(height * ratio);
+            context.setTransform(ratio, 0, 0, ratio, 0, 0);
+            streams = Array.from({ length: Math.ceil(width / step) }, (_, index) => {
+                const length = 8 + Math.floor(Math.random() * 17);
+                return {
+                    x: index * step + 6,
+                    y: Math.random() * (height + length * step),
+                    speed: 1.4 + Math.random() * 2.8,
+                    length,
+                    digits: Array.from({ length }, () => digits[Math.floor(Math.random() * digits.length)])
+                };
+            });
+            draw(false);
+        }
+
+        function animate(now) {
+            if (!playing || document.hidden) { frame = 0; return; }
+            if (now - previous >= 50) { draw(true); previous = now; }
+            frame = window.requestAnimationFrame(animate);
+        }
+
+        function update() {
+            window.cancelAnimationFrame(frame);
+            frame = 0;
+            toggle.textContent = playing ? 'Pause background' : 'Animate background';
+            toggle.setAttribute('aria-pressed', String(playing));
+            if (playing && !document.hidden) frame = window.requestAnimationFrame(animate);
+        }
+
+        toggle.hidden = false;
+        toggle.addEventListener('click', () => { playing = !playing; update(); });
+        motion.addEventListener('change', () => { playing = !motion.matches; update(); });
+        document.addEventListener('visibilitychange', update);
+        let resizeFrame = 0;
+        window.addEventListener('resize', () => {
+            window.cancelAnimationFrame(resizeFrame);
+            resizeFrame = window.requestAnimationFrame(resize);
+        });
+        resize();
+        update();
+    })();
+    </script>
 </body>
 </html>
